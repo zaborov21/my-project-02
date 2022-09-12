@@ -1,0 +1,15 @@
+.about {
+  @extend %container;
+  @extend %section;
+
+  background-color: $bg-color;
+}
+.about-descr {
+  margin-top: 30px;
+  
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: $primary-text-color;
+}

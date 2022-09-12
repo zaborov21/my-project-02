@@ -1,10 +1,53 @@
 .footer {
-  padding: 28px 0px;
+  @extend %container;
+  @extend %section;
 }
-.coyright {
-  font-size: 16px;
-  line-height: 0.8;
+.contacts-descr {
+  margin-top: 27px;
+
+  font-size: 18px;
+  line-height: 22px;
   text-align: center;
 
-  color: rgba(0, 0, 0, 0.74);
+  color: $secondary-text-color;
+}
+.btn-send {
+  margin-top: 40px;
+
+  width: 316px;
+  height: 42px;
+
+  background: $btn-color;
+  border-radius: 50px;
+
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: $primary-white-color;
+}
+.footer-social-list {
+  @extend %list;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+
+  //   &__item:not(:first-child) {
+  //     margin-left: 50px;
+  //   }
+}
+.icon-social {
+  width: 40px;
+  height: 40px;
+}
+.footer-descr {
+  margin-top: 50px;
+
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+
+  color: $thirty-text-color;
 }

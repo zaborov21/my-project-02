@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,138 +8,181 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
-    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Монета в кармане</title>
   </head>
   <body>
-   <div class="primary-wrapper">
     <header class="header">
-      <a class="logo" href="#"><p>INCREDIBLE</p></a>
-      <nav class="site-nav">
+      <a id="myBtn" onclick="topFunction()" title="Go to top">
+        <svg class="scroll-btn">
+          <use href="./images/icons/icons.svg#icon-scrolltotop"></use>
+        </svg>
+      </a>
+      <button
+            class="btn-menu btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg class="icon-menu">
+              <use
+                class="icon-burger-btn"
+                href="./images/icons/icons.svg#icon-burger-btn"
+              ></use>
+              <use
+                class="icon-close-btn"
+                href="./images/icons/icons.svg#icon-close-btn"
+              ></use>
+            </svg>
+          </button>
+      <div class="mobile-container" data-menu>
+        <nav class="site-nav">
           <ul class="site-nav-list">
-              <li class="site-nav-list__item"><a class="site-nav-list__link" href="#">Home</a></li>
-              <li class="site-nav-list__item"><a class="site-nav-list__link" href="#">About</a></li>
-              <li class="site-nav-list__item"><a class="site-nav-list__link" href="#">Gallery</a></li>
-              <li class="site-nav-list__item"><a class="site-nav-list__link" href="#">Contact</a></li>
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link link" href="#">Home</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link link" href="#">About me</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link link" href="#">Skills</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link link" href="#">Portfolio</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link link" href="#">Contacts</a>
+            </li>
           </ul>
-      </nav>
-      <ul class="nav-social-list">
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="facebook"><svg class="icon-facebook icon"><use href="./images/icons/icons.svg#icon-facebook"></use></svg></a></li>
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="twitter"><svg class="icon-twitter icon"><use href="./images/icons/icons.svg#icon-twitter"></use></svg></a></li>
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="wibe"><svg class="icon-wibe icon"><use href="./images/icons/icons.svg#icon-wibe"></use></svg></a></li>
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="be"><svg class="icon-be icon"><use href="./images/icons/icons.svg#icon-be"></use></svg></a></li>
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="w"><svg class="icon-w icon"><use href="./images/icons/icons.svg#icon-w"></use></svg></a></li>
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="instagram"><svg class="icon-instagram icon"><use href="./images/icons/icons.svg#icon-instagram"></use></svg></a></li>
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="email"><svg class="icon-envelope icon"><use href="./images/icons/icons.svg#icon-envelope"></use></svg></a></li>
-      </ul>
+        </nav>
+          <ul class="leng-group-list">
+            <li class="leng-group-list__item">
+              <a class="leng-group-list__link link" href="#">RU</a>
+            </li>
+            <li class="leng-group-list__item">
+              <a class="leng-group-list__link link" href="#">ENG</a>
+            </li>
+          </ul>
+      </div>
     </header>
-    <div class="secondary-wrapper">
-      <main>
-        <section class="hero" id="home">
-          <h1 class="hero-title">Welcome to the incredible</h1>
-          <ul class="hero-group-list">
-            <li class="hero-group-list__item"><button class="hero-group-list__btn white-btn btn" type="button">Button Text</button></li>
-            <li class="hero-group-list__item"><button class="hero-group-list__btn btn" type="button">Button Text</button></li>
-          </ul>
-          <a id="myBtn" onclick="topFunction()" title="Go to top"> <svg class="scroll-btn"> <use href="./images/icons/icons.svg#icon-scrolltotop"></use> </svg> </a>
-        </section>
-          <section class="adventeges" id="about">
-            <div class="container">
-              <h2 class="title">Section Heading</h2>
-            <p class="descr">This is some text inside of a div block.</p>
-            <ul class="adventeges-list">
-              <li class="adventeges-list__item">
-                <svg class="icon-video adventeges-icon"><use href="./images/icons/icons.svg#icon-video"></use></svg>
-                <h3 class="subtitle">Style 1</h3>
-                <p class="advanteges-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                <a class="adventeges-list__link" href="#">More</a>
-              </li>
-              <li class="adventeges-list__item">
-                <svg class="icon-markup adventeges-icon"><use href="./images/icons/icons.svg#icon-markup"></use></svg>
-                <h3 class="subtitle">Style 2</h3>
-                <p class="advanteges-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                <a class="adventeges-list__link" href="#">More</a>
-              </li>
-              <li class="adventeges-list__item">
-                <svg class="icon-settings adventeges-icon"><use href="./images/icons/icons.svg#icon-settings"></use></svg>
-                <h3 class="subtitle">Style 3</h3>
-                <p class="advanteges-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                <a class="adventeges-list__link" href="#">More</a>
-              </li>
-              <li class="adventeges-list__item">
-                <svg class="icon-cloud adventeges-icon"><use href="./images/icons/icons.svg#icon-cloud"></use></svg>
-                <h3 class="subtitle">Style 4</h3>
-                <p class="advanteges-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                <a class="adventeges-list__link" href="#">More</a>
-              </li>
-            </ul>
-            </div>
-          </section>
-        <section class="callback">
-            <h2 class="callback-title">Here you can put some text</h2>
-          <button class="callback-btn btn" type="button">Call To Action</button>
-        </section>
-        <section class="lightbox" id="gallery">
-          <h2 class="title">Lightbox Section</h2>
-          <p class="descr">This is some text inside of a div block.</p>
-          <ul class="lightbox-list">
-            <li class="lightbox-list__item"><img class="lightbox-list__img" src="./images/desktop/lightbox/lightbox-img-1.jpg" alt="Fire" width="220"></li>
-            <li class="lightbox-list__item"><img class="lightbox-list__img" src="./images/desktop/lightbox/lightbox-img-2.jpg" alt="Ivning" width="220"></li>
-            <li class="lightbox-list__item"><img class="lightbox-list__img" src="./images/desktop/lightbox/lightbox-img-3.jpg" alt="Bike" width="220"></li>
-            <li class="lightbox-list__item"><img class="lightbox-list__img" src="./images/desktop/lightbox/lightbox-img-4.jpg" alt="Car" width="220"></li>
-            <li class="lightbox-list__item"><img class="lightbox-list__img" src="./images/desktop/lightbox/lightbox-img-5.jpg" alt="Piano" width="220"></li>
-            <li class="lightbox-list__item"><img class="lightbox-list__img" src="./images/desktop/lightbox/lightbox-img-6.jpg" alt="Mountaunth" width="220"></li>
-            <li class="lightbox-list__item"><img class="lightbox-list__img" src="./images/desktop/lightbox/lightbox-img-7.jpg" alt="Frog" width="220"></li>
-            <li class="lightbox-list__item"><img class="lightbox-list__img" src="./images/desktop/lightbox/lightbox-img-8.jpg" alt="Sea" width="220"></li>
-          </ul>
-        </section>
-        <section class="contact" id="contact">
-          <h2 class="title">Contact Form</h2>
-          <p class="descr">This is some text inside of a div block.</p>
-          <form class="contact-form">
-            <div class="input-group">
-             <div class="input-wrapper">
-              <span class="input-wrappe__name">Name</span>
-              <label for="input-name"></label>
-              <input class="input-name input" id="input-name" type="text" required placeholder="">
-              <svg class="icon-person-input input-icon" width="18" height="18"><use href="./images/icons/icons.svg#icon-person-input"></use></svg>
-             </div>
-            <div class="input-wrapper">
-              <span class="input-wrappe__name">Email</span>
-              <label for="input-email"></label>
-            <input class="input-email input" id="input-email" type="email" required placeholder="">
-            <svg class="icon-email-input input-icon" width="18" height="18"><use href="./images/icons/icons.svg#icon-email-input"></use></svg>
-            </div>
-            </div>
-            <div class="input-wrapper__textarea">
-              <span class="input-wrapper-name__textarea">Message</span>
-            <label for="input-textarea"></label>
-            <textarea class="input-textarea" id="input-textarea" cols="30" rows="10" required placeholder="write your message..."></textarea>
-            </div>
-         <button class="contact-form__btn btn" type="submit">Send<svg class="icon-send"><use href="./images/icons/icons.svg#icon-send"></use></svg></button>
-          </form>
-        </section>
-      </main>
+    <main>
+      <section class="hero">
+        <h1 class="hero-title">Denis Novik</h1>
+        <p class="hero-descr">UX | UI designer 24 years old, Minsk</p>
+        <img
+          class="hero-img"
+          src="./images/mobile/hero/hero-mobile.jpg"
+          alt="Denis Novik"
+          width="316"
+          height="478"
+        />
+      </section>
+      <section class="about">
+        <h2 class="title">About me</h2>
+        <p class="about-descr">
+          Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design
+          and everything connected with it.
+        </p>
+        <p class="about-descr">
+          I'm studying at courses "Web and mobile design interfaces" in
+          IT-Academy.
+        </p>
+        <p class="about-descr">
+          Ready to implement excellent projects with wonderful people.
+        </p>
+      </section>
+      <section class="skills">
+        <h2 class="title">Skills</h2>
+        <p class="skills-descr">I work in such programs as</p>
+        <ul class="skills-list">
+          <li class="skills-list__item">
+            <svg class="icon-skill"><use href="./images/icons/icons.svg#icon-skill-1"></use></svg>
+            <p class="skills-list__descr">Adobe Photoshop</p>
+            <svg class="icon-reviews">
+              <use href="./images/icons/icons.svg#icon-reviews-1"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item">
+            <svg class="icon-skill"><use href="./images/icons/icons.svg#icon-skill-2"></use></svg>
+            <p class="skills-list__descr">Adobe Illustrator</p>
+            <svg class="icon-reviews">
+              <use href="./images/icons/icons.svg#icon-reviews-2"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item">
+            <svg class="icon-skill"><use href="./images/icons/icons.svg#icon-skill-3"></use></svg>
+            <p class="skills-list__descr">Adobe<br/> After Effects</p>
+            <svg class="icon-reviews">
+              <use href="./images/icons/icons.svg#icon-reviews-1"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item">
+            <svg class="icon-skill"><use href="./images/icons/icons.svg#icon-skill-4"></use></svg>
+            <p class="skills-list__descr">Figma</p>
+            <svg class="icon-reviews">
+              <use href="./images/icons/icons.svg#icon-reviews-1"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+      <section class="portfolio">
+        <h2 class="title">Portfolio</h2>
+        <ul class="portfolio-list">
+          <li class="portfolio-list__item">
+            <img
+              class="portfolio-img"
+              src="./images/mobile/portfolio/portfolio-mobile-jpg1.png"
+              alt="Online fashion store - Homepage"
+            /><a class="portfolio-list__descr" href="#">Online fashion store - Homepage</a>
+          </li>
+          <li class="portfolio-list__item">
+            <img
+              class="portfolio-img"
+              src="./images/mobile/portfolio/portfolio-mobile-jpg2.png"
+              alt="#"
+            /><a class="portfolio-list__descr" href="Reebok Store - Concept">Reebok Store - Concept</a>
+          </li>
+          <li class="portfolio-list__item">
+            <img
+              class="portfolio-img"
+              src="./images/mobile/portfolio/portfolio-mobile-jpg3.png"
+              alt="Braun Landing Page - Concept"
+            /><a class="portfolio-list__descr" href="#">Braun Landing Page - Concept</a>
+          </li>
+        </ul>
+      </section>
       <footer class="footer">
-        <p class="coyright">Copyright Incredible. Made in Webflow.</p>
+        <h2 class="title">Contacts</h2>
+        <p class="contacts-descr">
+          Want to know more or just chat? You are welcome!
+        </p>
+        <button class="btn-send btn" type="button">Send message</button>
+        <ul class="footer-social-list">
+          <li class="footer-social-list__item">
+            <a class="footer-social-list__link" href="#"><svg class="icon-social">
+                <use href="./images/icons/icons.svg#icon-linkedin"></use></svg></a>
+          </li>
+          <li class="footer-social-list__item">
+            <a class="footer-social-list__link" href="#"><svg class="icon-social">
+                <use href="./images/icons/icons.svg#icon-instagram"></use></svg></a>
+          </li>
+          <li class="footer-social-list__item">
+            <a class="footer-social-list__link" href="#">
+              <svg class="icon-social"><use href="./images/icons/icons.svg#icon-be"></use></svg></a>
+          </li>
+          <li class="footer-social-list__item">
+            <a class="footer-social-list__link" href="#">
+              <svg class="icon-social"><use href="./images/icons/icons.svg#icon-wibe"></use></svg></a>
+          </li>
+        </ul>
+        <p class="footer-descr">Like me on<br/> LinkedIn, Instagram, Behance, Dribble</p>
       </footer>
-    </div>
-   </div>
-   <script src="./js/scrolltotop.js"></script>
+    </main>
+    <script src="./js/scrolltotop.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
   </body>
 </html>
