@@ -1,0 +1,56 @@
+html{
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: $main-font;
+  font-weight: 400;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  @extend %container;
+}
+.btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+.title {
+  margin-top: 63px;
+
+  font-size: 31px;
+  line-height: 0.9;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $primary-text-color;
+}
+.descr {
+  margin-top: 22px;
+  
+  font-size: 19px;
+  line-height: 0.6;
+
+  text-align: center;
+
+  color: rgba(115, 115, 115, 0.74);
+}

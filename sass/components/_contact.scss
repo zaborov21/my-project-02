@@ -1,0 +1,158 @@
+.contact {
+  @extend %inner-container;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 58px;
+  padding-bottom: 58px;
+
+  background-color: $bg-contact-form;
+  border-bottom: 1px solid $bg-line;
+}
+.contact-form {
+  margin-top: 62px;
+}
+.input-group {
+  display: flex;
+  text-decoration: none;
+}
+.input-wrapper {
+  position: relative;
+  margin-right: 20px;
+}
+.input-wrappe__name{
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  line-height: 0.8;
+  color: rgba(101, 101, 101, 0.74);
+}
+.input-icon{
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  fill: currentColor;
+  
+  transition: fill $time $time-function;
+
+  &:hover, &:focus{
+    fill: $bg-color;
+
+    transition: fill $time $time-function;
+  }
+}
+
+.input:focus-within, .input-textarea:focus-within {
+  fill: $bg-color;
+  border: 1px solid $bg-color;
+  outline: none;
+
+  transition: fill $time $time-function;
+  transition: border $time $time-function;
+}
+.input:focus-within + .input-icon{
+  fill: $bg-color;
+  border: $bg-color;
+
+  transition: fill $time $time-function;
+  transition: border $time $time-function;
+}
+.input:hover + .input-icon{
+  fill: $bg-color;
+  border-color: $bg-color;
+
+  transition: fill $time $time-function;
+  transition: border $time $time-function;
+}
+.input-textarea:hover,
+.input:hover {
+  fill: $bg-color;
+  border: 1px solid $bg-color;
+
+  transition: fill $time $time-function;
+  transition: border $time $time-function;
+}
+
+.input-textarea::placeholder {
+  font-size: 12px;
+  line-height: 0.8;
+  color: rgba(101, 101, 101, 0.74);
+}
+.input{
+  padding: 0px 20px 0px 35px;
+
+  width: 280px;
+  height: 45px;
+
+  background: $primary-white-color;
+  box-shadow: 0px 0px 0px rgba(64, 64, 71, 0.3);
+  border-radius: 3px;
+  border-color: transparent;
+  color: rgba(101, 101, 101, 0.74);
+
+  transition: color $time $time-function;
+  transition: border $time $time-function;
+}
+.input-wrapper__textarea{
+  margin-top: 17px;
+}
+.input-wrapper-name__textarea{
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  line-height: 0.8;
+  color: rgba(101, 101, 101, 0.74);
+}
+.input-textarea {
+  padding: 21px 12px;
+
+  width: 583px;
+  height: 110px;
+
+  resize: none;
+  background: $primary-white-color;
+  box-shadow: 0px 0px 0px rgba(64, 64, 71, 0.3);
+  border-radius: 3px;
+  border-color: transparent;
+  color: rgba(101, 101, 101, 0.74);
+
+  transition: color $time $time-function;
+  transition: border $time $time-function;
+}
+.contact-form__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 17px;
+
+  width: 583px;
+  height: 45px;
+
+  font-size: 16px;
+  line-height: 0.76;
+  background-color: $btn-color;
+  border-radius: 4px;
+
+  color: $primary-white-color;
+
+  transition: background-color $time $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-color-hover;
+
+    transition: background-color $time $time-function;
+  }
+}
+.icon-send {
+  width: 22px;
+  height: 22px;
+
+  margin-left: 10px;
+}
